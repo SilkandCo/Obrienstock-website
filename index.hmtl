@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Business</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>My Business</h2>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to Your Online Store</h1>
+    <p>This is your first real website live on the internet.</p>
+    <a class="button" href="#">Shop Now</a>
+  </div>
+
+  <div class="section">
+    <h2>Our Brands</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Silk & Co.</h3>
+        <p>Premium clothing. Clean, minimal, confident style.</p>
+      </div>
+
+      <div class="card">
+        <h3>The Hidden Deal Hub</h3>
+        <p>Everyday deals, homeware & toys at great prices.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Why Choose Us</h2>
+    <p>Simple, reliable, and built for customers who want quality and value.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 My Business</p>
+  </footer>
+</body>
+</html>
