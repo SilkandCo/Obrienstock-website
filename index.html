@@ -1,192 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Silk & Co.</title>
+  <title>Silk & Co.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f3ee;
+      color: #222;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f3ee;
-  color: #222;
-}
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #fff;
+    }
 
-/* NAV BAR */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 40px;
-  background: #fff;
-}
+    .brand h1 {
+      margin: 0;
+      font-size: 44px;
+      font-style: italic;
+      font-weight: 600;
+    }
 
-.nav-left {
-  font-weight: bold;
-  font-size: 18px;
-}
+    .tagline {
+      font-size: 16px;
+      color: #555;
+    }
 
-.nav-right a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
+    .hero {
+      height: 420px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 80px;
+      background: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
 
-/* BRAND */
-.brand {
-  text-align: center;
-  background: #fff;
-  padding: 10px 20px 20px;
-}
+    .hero-box {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 30px;
+      max-width: 500px;
+    }
 
-.brand h1 {
-  margin: 0;
-  font-size: 48px;
-  font-style: italic;
-}
+    .hero-box h2 {
+      margin: 0 0 10px;
+      font-size: 40px;
+      font-style: italic;
+    }
 
-.brand p {
-  margin: 8px 0 0;
-  color: #555;
-}
+    .offer p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
 
-/* HERO */
-.hero {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 400px;
-  padding-left: 80px;
-  background: url('https://images.unsplash.com/photo-1618354691321-e851c56960d3?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-}
-  background:
-    url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center 40% / cover no-repeat;
-}
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      text-decoration: none;
+    }
 
-.hero-box {
-  background: rgba(255,255,255,0.9);
-  padding: 30px;
-  max-width: 500px;
-}
+    .section {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-.hero-box h2 {
-  margin: 0 0 10px;
-}
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.hero-box p {
-  margin: 5px 0;
-}
+    .card {
+      width: 200px;
+      background: white;
+      padding: 15px;
+    }
 
-.button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 12px 20px;
-  background: black;
-  color: white;
-  text-decoration: none;
-}
+    .card img {
+      width: 100%;
+    }
 
-/* PRODUCTS */
-.section {
-  text-align: center;
-  padding: 50px 20px;
-}
+    .price {
+      font-weight: bold;
+    }
 
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
+    .old {
+      text-decoration: line-through;
+      color: grey;
+      font-size: 14px;
+    }
 
-.card {
-  width: 220px;
-  background: white;
-  padding: 15px;
-}
-
-.card img {
-  width: 100%;
-}
-
-.price {
-  font-weight: bold;
-}
-
-.old {
-  text-decoration: line-through;
-  color: grey;
-  font-size: 14px;
-}
-
-.rrp {
-  font-size: 14px;
-  color: #666;
-}
-</style>
-
+    .rrp {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAV BAR -->
-<div class="nav">
-  <div class="nav-left">Silk & Co.</div>
-  <div class="nav-right">
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+  <div class="brand">
+    <h1>Silk & Co.</h1>
+    <div class="tagline">Sport, Leisure & Fashion Wear</div>
   </div>
-</div>
 
-<!-- BRAND -->
-<div class="brand">
-  <h1>Silk & Co.</h1>
-  <p>Premium Labels. Smarter Prices.</p>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-box">
-    <h2>Sport, Leisure & Fashion Wear</h2>
-    <p>Up to 30% off RRP on all items</p>
-    <p>Extra 5% off orders over £85</p>
-    <a class="button" href="#">Shop Now</a>
+  <div class="hero">
+    <div class="hero-box">
+      <h2>Premium Labels. Smarter Prices.</h2>
+      <div class="offer">
+        <p>Up to 30% off RRP on all items</p>
+        <p>Extra 5% off orders over £85</p>
+        <a class="button" href="#">Shop Now</a>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- PRODUCTS -->
-<div class="section">
-  <h2>Latest Arrivals</h2>
+  <div class="section">
+    <h2>Latest Arrivals</h2>
+    <p>Branded sport and casual wear at unbeatable prices.</p>
 
-  <div class="products">
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=700&q=80">
+        <p>Cream Hoodie</p>
+        <p class="price">£35 <span class="old">£50</span></p>
+        <p class="rrp">RRP £70</p>
+      </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80">
-      <p>Cream Hoodie</p>
-      <p class="price">£35 <span class="old">£50</span></p>
-      <p class="rrp">RRP £70</p>
-    </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80">
+        <p>Tracksuit</p>
+        <p class="price">£55 <span class="old">£80</span></p>
+        <p class="rrp">RRP £110</p>
+      </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=400&q=80">
-      <p>Tracksuit</p>
-      <p class="price">£55 <span class="old">£80</span></p>
-      <p class="rrp">RRP £110</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80">
-      <p>Trainer</p>
-      <p class="price">£75 <span class="old">£100</span></p>
-      <p class="rrp">RRP £150</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80">
+        <p>Trainer</p>
+        <p class="price">£75 <span class="old">£100</span></p>
+        <p class="rrp">RRP £150</p>
+      </div>
     </div>
 
   </div>
-</div>
 
 </body>
 </html>
