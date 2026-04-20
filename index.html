@@ -1,222 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silk & Co.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silk & Co.</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f3ee;
-      color: #222;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f3ee;
+  color: #222;
+}
 
-    .brand {
-      text-align: center;
-      background: #fff;
-      padding: 24px 20px 18px;
-    }
+/* NAV BAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #fff;
+}
 
-    .brand h1 {
-      margin: 0;
-      font-size: 48px;
-      font-style: italic;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
+.nav-left {
+  font-weight: bold;
+  font-size: 18px;
+}
 
-    .brand p {
-      margin: 8px 0 0;
-      font-size: 17px;
-      color: #555;
-    }
+.nav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
 
-    .hero {
-      min-height: 430px;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 40px 80px;
-      background:
-        linear-gradient(rgba(244, 243, 238, 0.18), rgba(244, 243, 238, 0.18)),
-        url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center 38% / cover no-repeat;
-    }
+/* BRAND */
+.brand {
+  text-align: center;
+  background: #fff;
+  padding: 10px 20px 20px;
+}
 
-    .hero-box {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 32px 36px;
-      max-width: 560px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: left;
-    }
+.brand h1 {
+  margin: 0;
+  font-size: 48px;
+  font-style: italic;
+}
 
-    .hero-left h2 {
-      margin: 0 0 10px;
-      font-size: 34px;
-      font-weight: 500;
-      line-height: 1.15;
-    }
+.brand p {
+  margin: 8px 0 0;
+  color: #555;
+}
 
-    .hero-left p {
-      margin: 0 0 14px;
-      color: #666;
-      font-size: 15px;
-    }
+/* HERO */
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  background:
+    url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center 40% / cover no-repeat;
+}
 
-    .offer p {
-      margin: 0 0 10px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #333;
-    }
+.hero-box {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  max-width: 500px;
+}
 
-    .button {
-      display: inline-block;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 12px 24px;
-      font-size: 14px;
-      letter-spacing: 0.4px;
-      margin-top: 8px;
-    }
+.hero-box h2 {
+  margin: 0 0 10px;
+}
 
-    .section {
-      text-align: center;
-      padding: 52px 20px 60px;
-    }
+.hero-box p {
+  margin: 5px 0;
+}
 
-    .section h2 {
-      margin: 0 0 10px;
-      font-size: 40px;
-      font-style: italic;
-      font-weight: 500;
-    }
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
 
-    .section-sub {
-      margin: 0 0 34px;
-      color: #666;
-      font-size: 15px;
-    }
+/* PRODUCTS */
+.section {
+  text-align: center;
+  padding: 50px 20px;
+}
 
-    .products {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
 
-    .card {
-      width: 240px;
-      background: #fff;
-      padding: 16px 16px 22px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
-    }
+.card {
+  width: 220px;
+  background: white;
+  padding: 15px;
+}
 
-    .card img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      display: block;
-      margin-bottom: 14px;
-    }
+.card img {
+  width: 100%;
+}
 
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
-      font-weight: 500;
-    }
+.price {
+  font-weight: bold;
+}
 
-    .price {
-      margin: 0;
-      font-size: 30px;
-      font-weight: 500;
-    }
+.old {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 14px;
+}
 
-    .old {
-      font-size: 18px;
-      color: #888;
-      text-decoration: line-through;
-      margin-left: 6px;
-    }
+.rrp {
+  font-size: 14px;
+  color: #666;
+}
+</style>
 
-    .rrp {
-      margin: 6px 0 16px;
-      color: #666;
-      font-size: 15px;
-    }
-
-    .card .button {
-      padding: 10px 22px;
-      font-size: 13px;
-    }
-
-    @media (max-width: 900px) {
-      .hero {
-        padding: 30px 20px;
-        justify-content: center;
-      }
-
-      .hero-box {
-        max-width: 100%;
-      }
-    }
-  </style>
 </head>
+
 <body>
 
-  <div class="brand">
-    <h1>Silk & Co.</h1>
-    <p>Premium Labels. Smarter Prices.</p>
+<!-- NAV BAR -->
+<div class="nav">
+  <div class="nav-left">Silk & Co.</div>
+  <div class="nav-right">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </div>
+</div>
 
-  <div class="hero">
-    <div class="hero-box">
-      <div class="hero-left">
-        <h2>Sport, Leisure &amp; Fashion Wear</h2>
-        <p>Casual branded pieces at better prices.</p>
-      </div>
+<!-- BRAND -->
+<div class="brand">
+  <h1>Silk & Co.</h1>
+  <p>Premium Labels. Smarter Prices.</p>
+</div>
 
-      <div class="offer">
-        <p>Up to 30% off RRP on all items</p>
-        <p>Extra 5% off orders over £85</p>
-        <a class="button" href="#">Shop Now</a>
-      </div>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-box">
+    <h2>Sport, Leisure & Fashion Wear</h2>
+    <p>Up to 30% off RRP on all items</p>
+    <p>Extra 5% off orders over £85</p>
+    <a class="button" href="#">Shop Now</a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section">
+  <h2>Latest Arrivals</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80">
+      <p>Cream Hoodie</p>
+      <p class="price">£35 <span class="old">£50</span></p>
+      <p class="rrp">RRP £70</p>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>Latest Arrivals</h2>
-    <p class="section-sub">Branded sport and casual wear at unbeatable prices.</p>
-
-    <div class="products">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Cream hoodie">
-        <h3>Cream Hoodie</h3>
-        <p class="price">£35 <span class="old">£50</span></p>
-        <p class="rrp">RRP £70</p>
-        <a class="button" href="#">Shop Now</a>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=700&q=80" alt="Casual tracksuit">
-        <h3>Casual Tracksuit</h3>
-        <p class="price">£55 <span class="old">£80</span></p>
-        <p class="rrp">RRP £110</p>
-        <a class="button" href="#">Shop Now</a>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80" alt="Lifestyle trainer">
-        <h3>Lifestyle Trainer</h3>
-        <p class="price">£75 <span class="old">£100</span></p>
-        <p class="rrp">RRP £150</p>
-        <a class="button" href="#">Shop Now</a>
-      </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=400&q=80">
+      <p>Tracksuit</p>
+      <p class="price">£55 <span class="old">£80</span></p>
+      <p class="rrp">RRP £110</p>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80">
+      <p>Trainer</p>
+      <p class="price">£75 <span class="old">£100</span></p>
+      <p class="rrp">RRP £150</p>
+    </div>
+
   </div>
+</div>
 
 </body>
 </html>
