@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silk & Co.</title>
+
   <style>
     body {
       margin: 0;
@@ -12,91 +15,101 @@
 
     .brand {
       text-align: center;
-      padding: 22px 20px 14px;
       background: #fff;
+      padding: 24px 20px 18px;
     }
 
     .brand h1 {
       margin: 0;
-      font-size: 44px;
+      font-size: 48px;
       font-style: italic;
       font-weight: 600;
       letter-spacing: 1px;
     }
 
     .brand p {
-      margin: 6px 0 0;
-      font-size: 16px;
+      margin: 8px 0 0;
+      font-size: 17px;
       color: #555;
     }
 
     .hero {
-      height: 420px;
+      min-height: 430px;
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      padding-left: 80px;
-      background: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      justify-content: flex-start;
+      padding: 40px 80px;
+      background:
+        linear-gradient(rgba(244, 243, 238, 0.18), rgba(244, 243, 238, 0.18)),
+        url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center center / cover no-repeat;
     }
 
     .hero-box {
-      background: rgba(255, 255, 255, 0.88);
-      padding: 30px 34px;
-      max-width: 520px;
-      text-align: left;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
-
-    .hero-box h2 {
-      margin: 0 0 14px;
-      font-size: 44px;
-      line-height: 1.05;
-      font-style: italic;
-      font-weight: 600;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 32px 36px;
+      max-width: 560px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
     .hero-grid {
       display: flex;
-      gap: 36px;
+      gap: 40px;
       align-items: flex-start;
       flex-wrap: wrap;
     }
 
     .hero-left {
+      flex: 1;
       min-width: 220px;
+      text-align: left;
+    }
+
+    .hero-left h2 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    .hero-left p {
+      margin: 0;
+      color: #666;
+      font-size: 15px;
     }
 
     .hero-right {
-      min-width: 180px;
+      min-width: 190px;
+      text-align: left;
+      border-left: 1px solid #ddd;
+      padding-left: 24px;
     }
 
     .hero-right p {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       font-size: 15px;
-      color: #333;
       font-weight: 600;
+      color: #333;
     }
 
     .button {
       display: inline-block;
-      margin-top: 8px;
-      padding: 12px 26px;
       background: #111;
-      color: #fff;
+      color: white;
       text-decoration: none;
+      padding: 12px 24px;
       font-size: 14px;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
+      margin-top: 6px;
     }
 
     .section {
       text-align: center;
-      padding: 48px 20px 60px;
-      background: #f4f3ee;
+      padding: 52px 20px 60px;
     }
 
     .section h2 {
       margin: 0 0 10px;
-      font-size: 42px;
+      font-size: 40px;
       font-style: italic;
       font-weight: 500;
     }
@@ -123,7 +136,7 @@
 
     .card img {
       width: 100%;
-      height: 270px;
+      height: 280px;
       object-fit: cover;
       display: block;
       margin-bottom: 14px;
@@ -137,13 +150,13 @@
 
     .price {
       margin: 0;
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 500;
     }
 
     .old {
       font-size: 18px;
-      color: #8a8a8a;
+      color: #888;
       text-decoration: line-through;
       margin-left: 6px;
     }
@@ -167,15 +180,18 @@
 
       .hero-box {
         max-width: 100%;
-        text-align: center;
       }
 
       .hero-grid {
-        justify-content: center;
+        gap: 24px;
       }
 
-      .hero-box h2 {
-        font-size: 34px;
+      .hero-right {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding-left: 0;
+        padding-top: 18px;
+        min-width: 100%;
       }
     }
   </style>
@@ -184,15 +200,15 @@
 
   <div class="brand">
     <h1>Silk & Co.</h1>
-    <p>Sport, Leisure &amp; Fashion Wear</p>
+    <p>Premium Labels. Smarter Prices.</p>
   </div>
 
   <div class="hero">
     <div class="hero-box">
-      <h2>Premium Labels.<br>Smarter Prices.</h2>
-
       <div class="hero-grid">
         <div class="hero-left">
+          <h2>Sport, Leisure &amp; Fashion Wear</h2>
+          <p>Casual branded pieces at better prices.</p>
         </div>
 
         <div class="hero-right">
@@ -210,24 +226,24 @@
 
     <div class="products">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=700&q=80" alt="Cream hoodie">
-        <h3>Cream Essentials Hoodie</h3>
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Cream hoodie">
+        <h3>Cream Hoodie</h3>
         <p class="price">£35 <span class="old">£50</span></p>
         <p class="rrp">RRP £70</p>
         <a class="button" href="#">Shop Now</a>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80" alt="Tracksuit">
-        <h3>Signature Tracksuit</h3>
+        <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?auto=format&fit=crop&w=700&q=80" alt="Casual tracksuit">
+        <h3>Casual Tracksuit</h3>
         <p class="price">£55 <span class="old">£80</span></p>
         <p class="rrp">RRP £110</p>
         <a class="button" href="#">Shop Now</a>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Trainer">
-        <h3>Premium Trainer</h3>
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=80" alt="Lifestyle trainer">
+        <h3>Lifestyle Trainer</h3>
         <p class="price">£75 <span class="old">£100</span></p>
         <p class="rrp">RRP £150</p>
         <a class="button" href="#">Shop Now</a>
