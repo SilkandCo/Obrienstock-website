@@ -43,7 +43,7 @@ body {
   margin-top: 5px;
 }
 
-/* HERO (FULL BACKGROUND IMAGE – NO GAP) */
+/* HERO — FIXED PROPERLY */
 .hero {
   height: 420px;
   display: flex;
@@ -51,10 +51,11 @@ body {
   align-items: center;
   padding-right: 80px;
 
-  background: url('https://images.unsplash.com/photo-1520975922323-3c6b7c4f2b2b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  /* THIS FILLS THE GAP */
+  background: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
 }
 
-/* DISCOUNT BOX */
+/* BOX */
 .hero-box {
   background: rgba(255,255,255,0.9);
   padding: 30px;
@@ -127,7 +128,6 @@ body {
 
 <body>
 
-<!-- NAV -->
 <div class="navbar">
   <div class="nav-left">
     <a href="#">Home</a>
@@ -138,13 +138,11 @@ body {
   <div>Cart</div>
 </div>
 
-<!-- BRAND -->
 <div class="brand">
   <div class="logo">Silk & Co.</div>
   <div class="tagline">Sport, Leisure & Fashion Wear</div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-box">
     <h2>Premium Labels. Smarter Prices.</h2>
@@ -156,7 +154,6 @@ body {
   </div>
 </div>
 
-<!-- PRODUCTS -->
 <div class="section">
   <h2>Latest Arrivals</h2>
 
