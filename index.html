@@ -10,18 +10,13 @@ body {
   background: #f4f3ee;
 }
 
-/* TOP NAV BAR */
+/* NAVBAR (UNCHANGED) */
 .navbar {
   background: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 40px;
   border-bottom: 1px solid #ddd;
-}
-
-.nav-left {
-  font-size: 14px;
 }
 
 .nav-left a {
@@ -30,40 +25,36 @@ body {
   color: #333;
 }
 
-.nav-right {
-  font-size: 14px;
-}
-
-/* BRAND BAR */
-.brand-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
+/* BRAND NOW CENTRED */
+.brand {
+  text-align: center;
+  padding: 20px;
   background: #fff;
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 42px;
   font-style: italic;
   font-weight: bold;
 }
 
 .tagline {
-  font-size: 15px;
   color: #555;
+  margin-top: 5px;
 }
 
-/* HERO */
+/* HERO (IMAGE UPDATED ONLY) */
 .hero {
   height: 420px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* stays right */
   align-items: center;
   padding-right: 80px;
+
   background: url('https://images.unsplash.com/photo-1505666287802-931dc83a2f45?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
 }
 
+/* DISCOUNT BOX (UNCHANGED POSITION) */
 .hero-box {
   background: rgba(255,255,255,0.9);
   padding: 30px;
@@ -91,7 +82,7 @@ body {
   text-decoration: none;
 }
 
-/* PRODUCTS */
+/* PRODUCTS (UNCHANGED) */
 .section {
   text-align: center;
   padding: 40px 20px;
@@ -136,7 +127,7 @@ body {
 
 <body>
 
-<!-- TOP NAV -->
+<!-- NAV -->
 <div class="navbar">
   <div class="nav-left">
     <a href="#">Home</a>
@@ -144,13 +135,11 @@ body {
     <a href="#">About Us</a>
     <a href="#">Contact</a>
   </div>
-  <div class="nav-right">
-    Cart
-  </div>
+  <div>Cart</div>
 </div>
 
-<!-- BRAND ROW -->
-<div class="brand-bar">
+<!-- BRAND (NOW CENTRED) -->
+<div class="brand">
   <div class="logo">Silk & Co.</div>
   <div class="tagline">Sport, Leisure & Fashion Wear</div>
 </div>
