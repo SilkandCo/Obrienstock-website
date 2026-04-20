@@ -43,28 +43,20 @@ body {
   margin-top: 5px;
 }
 
-/* HERO NOW SPLIT */
+/* HERO (FULL BACKGROUND IMAGE – NO GAP) */
 .hero {
   height: 420px;
   display: flex;
-}
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 80px;
 
-/* LEFT IMAGE */
-.hero-left {
-  width: 50%;
   background: url('https://images.unsplash.com/photo-1520975922323-3c6b7c4f2b2b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
 }
 
-/* RIGHT BOX */
-.hero-right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* DISCOUNT BOX */
 .hero-box {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.9);
   padding: 30px;
   max-width: 420px;
   text-align: left;
@@ -154,17 +146,13 @@ body {
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-left"></div>
-
-  <div class="hero-right">
-    <div class="hero-box">
-      <h2>Premium Labels. Smarter Prices.</h2>
-      <div class="offer">
-        <p>Up to 30% off RRP on all items</p>
-        <p>Extra 5% off orders over £85</p>
-      </div>
-      <a class="button" href="#">Shop Now</a>
+  <div class="hero-box">
+    <h2>Premium Labels. Smarter Prices.</h2>
+    <div class="offer">
+      <p>Up to 30% off RRP on all items</p>
+      <p>Extra 5% off orders over £85</p>
     </div>
+    <a class="button" href="#">Shop Now</a>
   </div>
 </div>
 
