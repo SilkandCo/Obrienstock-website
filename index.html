@@ -10,7 +10,7 @@ body {
   background: #f4f3ee;
 }
 
-/* NAVBAR (UNCHANGED) */
+/* NAVBAR */
 .navbar {
   background: #fff;
   display: flex;
@@ -25,7 +25,7 @@ body {
   color: #333;
 }
 
-/* BRAND NOW CENTRED */
+/* BRAND */
 .brand {
   text-align: center;
   padding: 20px;
@@ -43,20 +43,28 @@ body {
   margin-top: 5px;
 }
 
-/* HERO (ONLY IMAGE CHANGED) */
+/* HERO NOW SPLIT */
 .hero {
   height: 420px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 80px;
-
-  background: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
 }
 
-/* DISCOUNT BOX (UNCHANGED POSITION) */
+/* LEFT IMAGE */
+.hero-left {
+  width: 50%;
+  background: url('https://images.unsplash.com/photo-1520975922323-3c6b7c4f2b2b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+}
+
+/* RIGHT BOX */
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-box {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   padding: 30px;
   max-width: 420px;
   text-align: left;
@@ -82,7 +90,7 @@ body {
   text-decoration: none;
 }
 
-/* PRODUCTS (UNCHANGED) */
+/* PRODUCTS */
 .section {
   text-align: center;
   padding: 40px 20px;
@@ -138,7 +146,7 @@ body {
   <div>Cart</div>
 </div>
 
-<!-- BRAND (CENTRED) -->
+<!-- BRAND -->
 <div class="brand">
   <div class="logo">Silk & Co.</div>
   <div class="tagline">Sport, Leisure & Fashion Wear</div>
@@ -146,13 +154,17 @@ body {
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-box">
-    <h2>Premium Labels. Smarter Prices.</h2>
-    <div class="offer">
-      <p>Up to 30% off RRP on all items</p>
-      <p>Extra 5% off orders over £85</p>
+  <div class="hero-left"></div>
+
+  <div class="hero-right">
+    <div class="hero-box">
+      <h2>Premium Labels. Smarter Prices.</h2>
+      <div class="offer">
+        <p>Up to 30% off RRP on all items</p>
+        <p>Extra 5% off orders over £85</p>
+      </div>
+      <a class="button" href="#">Shop Now</a>
     </div>
-    <a class="button" href="#">Shop Now</a>
   </div>
 </div>
 
