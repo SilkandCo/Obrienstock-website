@@ -1,28 +1,239 @@
-<!DOCTYPE html><html><head><title>Silk & Co.</title><style>body {  margin: 0;  font-family: Arial, sans-serif;  background: #f4f3ee;}/* BRAND */.brand {  text-align: center;  padding: 20px;}.brand h1 {  font-size: 46px;  font-style: italic;  margin: 0;}.brand p {  margin: 5px 0 0;  color: #555;}/* HERO */.hero {  display: flex;  justify-content: center;  align-items: center;  height: 400px;  background: url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;}.hero-box {  background: rgba(255,255,255,0.85);  padding: 30px;  display: flex;  gap: 40px;  align-items: center;}/* LEFT TEXT */.hero-text {  text-align: left;}.hero-text h2 {  margin: 0;}.hero-text p {  margin: 5px 0;}/* RIGHT OFFER COLUMN */.offer {  text-align: left;}.offer p {  margin: 5px 0;  font-weight: bold;}.button {  display: inline-block;  margin-top: 10px;  padding: 10px 20px;  background: black;  color: white;  text-decoration: none;}/* PRODUCTS */.section {  text-align: center;  padding: 40px 20px;}.products {  display: flex;  justify-content: center;  gap: 20px;  flex-wrap: wrap;}.card {  width: 200px;  background: white;  padding: 15px;}.card img {  width: 100%;}.price {  font-weight: bold;}.old {  text-decoration: line-through;  color: grey;  font-size: 14px;}.rrp {  font-size: 14px;  color: #666;}</style></head><body><!-- BRAND --><div class="brand">  <h1>Silk & Co.</h1>  <p>Premium Labels. Smarter Prices.</p></div><!-- HERO --><div class="hero">  <div class="hero-box">    <div class="hero-text">      <h2>Premium Sport & Leisurewear</h2>      <p>Branded clothing at unbeatable prices</p>    </div>    <div class="offer">      <p>Up to 30% off RRP</p>      <p>Extra 5% off orders over £85</p>      <a class="button" href="#">Shop Now</a>    </div>  </div></div><!-- PRODUCTS --><div class="section">  <h2>Latest Arrivals</h2>  <p>Branded sport and casual wear at unbeatable prices.</p>  <div class="products">    <div class="card">      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=400&q=80">      <p>Nike Fleece Hoodie</p>      <p class="price">£35 <span class="old">£50</span></p>      <p class="rrp">RRP £70</p>    </div>    <div class="card">      <img src="https://images.unsplash.com/photo-1593032465171-8f0b9c0f0c9d?auto=format&fit=crop&w=400&q=80">      <p>Adidas Sweatshirt</p>      <p class="price">£18 <span class="old">£30</span></p>      <p class="rrp">RRP £50</p>    </div>    <div class="card">      <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=400&q=80">      <p>North Face Puffer</p>      <p class="price">£65 <span class="old">£75</span></p>      <p class="rrp">RRP £140</p>    </div>  </div></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Silk & Co.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f3ee;
+      color: #222;
+    }
 
-🔥 What you’ll notice:
+    .brand {
+      text-align: center;
+      padding: 22px 20px 14px;
+      background: #fff;
+    }
 
+    .brand h1 {
+      margin: 0;
+      font-size: 44px;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
 
-Silk & Co bigger + slight slant ✔
+    .brand p {
+      margin: 6px 0 0;
+      font-size: 16px;
+      color: #555;
+    }
 
+    .hero {
+      height: 420px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 80px;
+      background: url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
 
-“Premium Labels…” under it ✔
+    .hero-box {
+      background: rgba(255, 255, 255, 0.88);
+      padding: 30px 34px;
+      max-width: 520px;
+      text-align: left;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
 
+    .hero-box h2 {
+      margin: 0 0 14px;
+      font-size: 44px;
+      line-height: 1.05;
+      font-style: italic;
+      font-weight: 600;
+    }
 
-Offers moved into clean right column ✔
+    .hero-grid {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
 
+    .hero-left {
+      min-width: 220px;
+    }
 
-Beige hoodie image ✔
+    .hero-right {
+      min-width: 180px;
+    }
 
+    .hero-right p {
+      margin: 0 0 10px;
+      font-size: 15px;
+      color: #333;
+      font-weight: 600;
+    }
 
-Layout more like your inspo ✔
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 12px 26px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
 
+    .section {
+      text-align: center;
+      padding: 48px 20px 60px;
+      background: #f4f3ee;
+    }
 
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 42px;
+      font-style: italic;
+      font-weight: 500;
+    }
 
-👍 Now:
-Paste → Commit → Refresh
+    .section-sub {
+      margin: 0 0 34px;
+      color: #666;
+      font-size: 15px;
+    }
 
-👉 Tell me:
-“that’s close” or “still not right”
-Next step would be:
-👉 fonts + spacing = making it look premium premium
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 240px;
+      background: #fff;
+      padding: 16px 16px 22px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    .card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .price {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    .old {
+      font-size: 18px;
+      color: #8a8a8a;
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+
+    .rrp {
+      margin: 6px 0 16px;
+      color: #666;
+      font-size: 15px;
+    }
+
+    .card .button {
+      padding: 10px 22px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        padding: 30px 20px;
+        justify-content: center;
+      }
+
+      .hero-box {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .hero-grid {
+        justify-content: center;
+      }
+
+      .hero-box h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brand">
+    <h1>Silk & Co.</h1>
+    <p>Sport, Leisure &amp; Fashion Wear</p>
+  </div>
+
+  <div class="hero">
+    <div class="hero-box">
+      <h2>Premium Labels.<br>Smarter Prices.</h2>
+
+      <div class="hero-grid">
+        <div class="hero-left">
+        </div>
+
+        <div class="hero-right">
+          <p>Up to 30% off RRP on all items</p>
+          <p>Extra 5% off orders over £85</p>
+          <a class="button" href="#">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Latest Arrivals</h2>
+    <p class="section-sub">Branded sport and casual wear at unbeatable prices.</p>
+
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=700&q=80" alt="Cream hoodie">
+        <h3>Cream Essentials Hoodie</h3>
+        <p class="price">£35 <span class="old">£50</span></p>
+        <p class="rrp">RRP £70</p>
+        <a class="button" href="#">Shop Now</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80" alt="Tracksuit">
+        <h3>Signature Tracksuit</h3>
+        <p class="price">£55 <span class="old">£80</span></p>
+        <p class="rrp">RRP £110</p>
+        <a class="button" href="#">Shop Now</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Trainer">
+        <h3>Premium Trainer</h3>
+        <p class="price">£75 <span class="old">£100</span></p>
+        <p class="rrp">RRP £150</p>
+        <a class="button" href="#">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
