@@ -1,111 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Silk & Co</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
+<title>Silk & Co</title>
 
-    header {
-      background: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f3ee;
+  text-align: center;
+}
 
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: white;
-    }
+/* HERO */
+.hero {
+  background: #f4f3ee;
+  padding: 60px 20px;
+}
 
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #555;
-    }
+.hero p {
+  color: #666;
+  margin-bottom: 20px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: black;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
 
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* PRODUCTS */
+.section {
+  padding: 50px 20px;
+}
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.section h2 {
+  margin-bottom: 30px;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      width: 250px;
-      border-radius: 8px;
-    }
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: white;
-    }
-  </style>
+.card {
+  background: white;
+  padding: 20px;
+  width: 220px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+</style>
+
 </head>
+
 <body>
-  <header>
-    <h2>My Business</h2>
-  </header>
 
-  <div class="hero">
-    <h1>Silk & Co</h1>
-    <p class=">Premium Street & Leisurewear</p>
-    <p>This is your first real website live on the internet.</p>
-    <a class="button" href="#">Shop Now</a>
-  </div>
+<!-- HERO -->
+<div class="hero">
+  <h1>Premium Labels. Smarter Prices.</h1>
+  <p>Up to 30% off retail</p>
+  <a class="button" href="#">Shop Now</a>
+</div>
 
-  <div class="section">
-    <h2>Our Brands</h2>
+<!-- PRODUCTS -->
+<div class="section">
+  <h2>Latest Arrivals</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Silk & Co.</h3>
-        <p>Premium clothing. Clean, minimal, confident style.</p>
-      </div>
+  <div class="products">
 
-      <div class="card">
-        <h3>The Hidden Deal Hub</h3>
-        <p>Everyday deals, homeware & toys at great prices.</p>
-      </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/220">
+      <h3>Nike Fleece Hoodie</h3>
+      <p class="price">£23 <span class="old-price">£35</span></p>
+      <p>RRP £55</p>
+      <a class="button" href="#">Shop Now</a>
     </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220">
+      <h3>Adidas Originals Sweatshirt</h3>
+      <p class="price">£18 <span class="old-price">£30</span></p>
+      <p>RRP £50</p>
+      <a class="button" href="#">Shop Now</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/220">
+      <h3>The North Face Puffer</h3>
+      <p class="price">£65 <span class="old-price">£75</span></p>
+      <p>RRP £140</p>
+      <a class="button" href="#">Shop Now</a>
+    </div>
+
   </div>
 
-  <div class="section">
-    <h2>Why Choose Us</h2>
-    <p>Simple, reliable, and built for customers who want quality and value.</p>
-  </div>
+</div>
 
-  <footer>
-    <p>© 2026 My Business</p>
-  </footer>
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Silk & Co</h2>
+  <p>Premium branded clothing at smarter prices.</p>
+</div>
+
 </body>
 </html>
