@@ -41,7 +41,7 @@
       padding: 40px 80px;
       background:
         linear-gradient(rgba(244, 243, 238, 0.18), rgba(244, 243, 238, 0.18)),
-        url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center center / cover no-repeat;
+        url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80') center 38% / cover no-repeat;
     }
 
     .hero-box {
@@ -49,18 +49,6 @@
       padding: 32px 36px;
       max-width: 560px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    .hero-grid {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .hero-left {
-      flex: 1;
-      min-width: 220px;
       text-align: left;
     }
 
@@ -72,20 +60,13 @@
     }
 
     .hero-left p {
-      margin: 0;
+      margin: 0 0 14px;
       color: #666;
       font-size: 15px;
     }
 
-    .hero-right {
-      min-width: 190px;
-      text-align: left;
-      border-left: 1px solid #ddd;
-      padding-left: 24px;
-    }
-
-    .hero-right p {
-      margin: 0 0 12px;
+    .offer p {
+      margin: 0 0 10px;
       font-size: 15px;
       font-weight: 600;
       color: #333;
@@ -99,7 +80,7 @@
       padding: 12px 24px;
       font-size: 14px;
       letter-spacing: 0.4px;
-      margin-top: 6px;
+      margin-top: 8px;
     }
 
     .section {
@@ -181,18 +162,6 @@
       .hero-box {
         max-width: 100%;
       }
-
-      .hero-grid {
-        gap: 24px;
-      }
-
-      .hero-right {
-        border-left: none;
-        border-top: 1px solid #ddd;
-        padding-left: 0;
-        padding-top: 18px;
-        min-width: 100%;
-      }
     }
   </style>
 </head>
@@ -205,17 +174,15 @@
 
   <div class="hero">
     <div class="hero-box">
-      <div class="hero-grid">
-        <div class="hero-left">
-          <h2>Sport, Leisure &amp; Fashion Wear</h2>
-          <p>Casual branded pieces at better prices.</p>
-        </div>
+      <div class="hero-left">
+        <h2>Sport, Leisure &amp; Fashion Wear</h2>
+        <p>Casual branded pieces at better prices.</p>
+      </div>
 
-        <div class="hero-right">
-          <p>Up to 30% off RRP on all items</p>
-          <p>Extra 5% off orders over £85</p>
-          <a class="button" href="#">Shop Now</a>
-        </div>
+      <div class="offer">
+        <p>Up to 30% off RRP on all items</p>
+        <p>Extra 5% off orders over £85</p>
+        <a class="button" href="#">Shop Now</a>
       </div>
     </div>
   </div>
